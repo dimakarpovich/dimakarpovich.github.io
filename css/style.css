@@ -1,0 +1,194 @@
+*{
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-family: 'Roboto Slab', serif;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 30px auto;
+    box-shadow: 10px 10px 40px -1px rgb(0 0 0 / 23%);
+}
+main {
+    display: flex;
+    justify-content: space-between;
+}
+span {
+    font-weight: bold;
+}
+a {
+    padding-left: 10px;
+}
+.block-left {
+    padding: 50px 50px;
+    width: 60%;
+    background-color: #fff;
+}
+.foto {
+    display: block;
+    margin: 0 auto;
+    width: 450px;
+    height: 450px;
+    border-radius: 100%;
+    border: 5px solid rgb(235, 226, 228);
+}
+.title {
+    margin-top: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 41px;
+    letter-spacing: 5px;
+}
+.profile-title {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+.section-title {
+    margin: 40px 0 30px 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+    letter-spacing: 3px;
+    border-bottom: 1px solid #000;
+}
+.contacts-list {
+    position: relative;
+}
+li {
+    list-style-type: none;
+}
+.contacts-item a {
+    color: rgb(212, 158, 163);
+}
+.contacts-item a:hover {
+    color: #000;
+}
+
+.contacts-item:nth-child(1)::before {
+    background-image: url(../assets/arrow.png);
+}
+.contacts-item::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 5px;
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.contacts-item:nth-child(2)::before {
+    top: 25px;
+    background-image: url(../assets/discord.png);
+}
+.contacts-item:nth-child(3)::before {
+    top: 47px;
+    background-image: url(../assets/email.png);
+}
+.contacts-item:nth-child(4)::before {
+    width: 18px;
+    height: 18px;
+    top: 67px;
+    background-image: url(../assets/github.png);
+}
+.contacts-item:nth-child(5)::before {
+    width: 18px;
+    height: 18px;
+    top: 90px;
+    background-image: url(../assets/location.png);
+}
+.contacts-item:nth-child(5) {
+    padding-top: 4px;
+}
+.education-text span, .experience-text span {
+    font-weight: 700;
+}
+.experience-item {
+    list-style-type: circle;
+}
+.experience-item ::marker {
+    unicode-bidi: isolate;
+    font-variant-numeric: tabular-nums;
+    text-transform: none;
+    text-indent: 0px !important;
+    text-align: start !important;
+    text-align-last: start !important;
+}
+.courses-list {
+    padding-left: 10px;
+}
+.courses-item {
+    position: relative;
+    padding-left: 30px;
+}
+.courses-item::before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 0px;
+    width: 20px;
+    height: 20px;
+    background-image: url(../assets/arrow.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.block-rigth {
+    padding: 20px 50px 30px;
+    width: 40%;
+    background-color: rgb(191 189 190);
+}
+.skills-list {
+    display: flex;
+    gap: 50px;
+    padding-left: 10px;
+}
+.skills-item {
+    position: relative;
+    padding-left: 30px;
+}
+.skills-item::before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 0px;
+    width: 20px;
+    height: 20px;
+    background-image: url(../assets/arrow.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.projects-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+
+}
+.project-item {
+    position: relative;
+    width: 250px;
+    height: 200px;
+    border: 5px solid rgb(235, 226, 228);
+    box-shadow: 0 5px 15px rgba(0,0,0, .1);
+    overflow: hidden;
+}
+.project-item:hover img {
+    transform: scale(1.1);
+}
+.project-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all .2s linear;
+}
+.project-link {
+    position: absolute;
+    color: #fff;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+}

@@ -1,0 +1,30 @@
+
+@media (max-width: 769px) {
+  .block-rigth {
+    padding: 20px 30px;
+  }
+  .skills-list {
+    flex-direction: column;
+    gap: 1px;
+  }
+  .skills-item {
+    margin-top: 3px;
+  }
+}
+
+@media (max-width: 426px) {
+    .main {
+        display: block;
+    }
+    .block-left {
+        width: 100%;
+    }
+    .foto {
+        width: 300px;
+        height: 300px;
+    }
+    .block-rigth {
+        width: 100%;
+        padding: 50px;
+    }
+}
